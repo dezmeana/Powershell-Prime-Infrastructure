@@ -1,4 +1,7 @@
-
+# Set up authentication and server details
+$username = "{{username}}"
+$password = "{{api password}}"
+$server = "{{PIurl}}"
 
 # Create base64 encoded credentials
 $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $username, $password)))
